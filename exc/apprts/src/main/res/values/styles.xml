@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="toolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!--菜单文本的颜色-->
+        <item name="android:textColor">@color/md_white_1000</item>
+        <!--背景颜色-->
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+        <!--appbar文本的颜色-->
+        <item name="android:textColorPrimary">@color/md_white_1000</item>
+    </style>
+
+    <style name="popMenuStyle" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/md_grey_800</item>
+        <item name="android:colorBackground">@color/md_white_1000</item>
+    </style>
+
+    <style name="CircleDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@color/colorTextNormal</item>
+        <item name="android:windowBackground">@drawable/bg_circular_grey_radius_16dp</item>
+    </style>
+
+    <style name="CustomerDialogStyle" parent="Theme.AppCompat.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!--自定义耗时对话框-->
+    <style name="CustomProgressDialog" parent="Theme.AppCompat.Dialog">
+        <!--此属性控制悬浮窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>
